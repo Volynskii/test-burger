@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3201b402-eb4b-43af-92c0-01988a3cb9c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/comments-mock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/footer/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/header/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/header/images/BurgerMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/header/images/Rectangle 57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/header/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/main/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/main/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624693560023</updated>
-      <workItem from="1624693561153" duration="2901000" />
+      <workItem from="1624693561153" duration="16433000" />
     </task>
     <servers />
   </component>

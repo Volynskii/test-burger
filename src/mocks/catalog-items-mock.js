@@ -1,0 +1,40 @@
+ const catalogItems = [
+     {id:0,
+         src: "./images/catalog/catalog-item-1.png",
+         itemPrice: 1200,
+         itemName:'Зайчик-попрыгайчик',
+         itemParamOneName:'рост',
+         itemParamOneValue: 30,
+         itemParamOneUnit: 'см',
+         itemParamTwoName: 'вес',
+         itemParamTwoValue: 200,
+         itemParamTwoUnit: 'г',
+         itemQuantity: 1
+     },
+     {id:1,
+         src: "./images/catalog/catalog-item-2.png",
+         itemPrice: 690,
+         itemName:'Корзинка для белья',
+         itemParamOneName:'Диаметр',
+         itemParamOneValue: 15,
+         itemParamOneUnit: 'см',
+         itemParamTwoName: 'высота',
+         itemParamTwoValue: 10,
+         itemParamTwoUnit: 'см',
+         itemQuantity: 1
+     },
+     {id:2,
+         src: "./images/catalog/catalog-item-3.png",
+         itemPrice: 1500,
+         itemName:'Большая корзинка для игрушек',
+         itemParamOneName:'Диаметр',
+         itemParamOneValue: 30,
+         itemParamOneUnit: 'см',
+         itemParamTwoName: 'высота',
+         itemParamTwoValue: 30,
+         itemParamTwoUnit: 'см',
+         itemQuantity: 1},
+
+];
+
+ export default catalogItems;

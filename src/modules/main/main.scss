@@ -1,0 +1,17 @@
+@import "../../utilities/variables";
+
+@media (min-width: $desktop-width-min) {
+
+.hamburgers {
+  display: flex;
+  justify-content: center;
+}
+  .hamburgers__wrapper {
+    width: 1248px;
+
+  }
+
+  .hamburgers__wrapper__headline {
+    font-size: 32px;
+  }
+}
