@@ -1,71 +1,150 @@
 import React from "react";
 import './header.scss'
+import {useSelector} from "react-redux";
+import { Link} from "react-scroll";
+// import filters from "../../mocks/filter";
+import {navItems} from "../../mocks/filter";
+import cx from "classnames";
+import categories from "../../mocks/categories";
+import {useDispatch} from "react-redux";
+import {changeDelivery} from "../../store/basket-items/actions";
+import ReactTooltip from 'react-tooltip';
 
 export const Header = () => {
+
+    const basketItems = useSelector((state) => state.basketItems.basketItems);
+
+    const totalPrice = basketItems.reduce((currentTotal, item) => {
+        return item.price * item.itemQuantity + currentTotal
+    }, 0);
+
+    const dispatch = useDispatch();
+
+    const delivery = {
+        delivery: 'Доставка',
+        selfPickup:'Самовызов'
+    }
+    const activeButton = useSelector((state) => state.basketItems.delivery);
+
+    const onClick = (e) => {
+        // setActiveButton(!activeButton)
+dispatch(changeDelivery(!activeButton))
+    }
     return (
         <>
         <section className="headline">
             <div className="headline__wrapper" >
 
+
                 <article className="headline__wrapper__basket-menu">
-
 <div className="headline__wrapper__basket-menu__menu">
-    ЗНАЧОК МЕНЮ
 </div>
-
                 <div className="headline__wrapper__basket-menu__basket">
-                   300 &#8381;
+                    {totalPrice} ₽
                 </div>
 
                 </article>
 
 
                 <article className="delivery">
-                <h1 className="delivery__choosen-city">
+                    <div className="delivery__choosen-city">
+                <h1 className="delivery__choosen-city__city" >
                     Доставка г.Москва
                 </h1>
+                    </div>
 
                     <div className="delivery__type">
-                        <button className="delivery__type__take-out">Доставка</button>
-                        <button className="delivery__type__take-in">Самовызов</button>
+                        <button onClick={(e) => onClick(e)}
+                        className={cx(`delivery__type__button`, {
+                        [`button-active`]: activeButton
+                    })}
+                        >{delivery.delivery}</button>
+                        <button onClick={(e) => onClick(e)}
+                                className={cx(`delivery__type__button`, {
+                                    [`button-active`]: !activeButton
+                                })}
+                        >{delivery.selfPickup}</button>
                     </div>
                 </article>
 
 
-<div className="delivery-address">
-    <form>
-        <ul className="delivery-address__list">
+{activeButton === true && (
 
-            <li className="delivery-address__list__item">
-                <label className="label-address" htmlFor="address">Улица </label>
-                <input type="text" id="address" placeholder="Остороженка" />
-            </li>
+    <div className="delivery-address">
+        <form className="delivery-address__form">
+            <ul className="delivery-address__list">
 
-            <li className="delivery-address__list__item pd">
-                <label className="label-house-number" htmlFor="house-number">Дом</label>
-                <input type="text" id="house-number" placeholder="Остороженка"/>
-            </li>
-        </ul>
-    </form>
-</div>
+                <li className="delivery-address__list__item">
+                    <label className="label-address" htmlFor="address">Улица </label>
+                    <input data-for="main"
+                           data-iscapture="true"
+                           data-tip = "Нужно заполнить для оформления заказа"
+                           data-place="bottom"
+                           type="text" id="address" placeholder="Остороженка" />
+                    {/*<div className="form-error">*/}
+                    {/*    <p className="form-error__text">*/}
+                    {/*    Нужно заполнить для оформления доставки*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
 
-                <ul className="filter">
-                    <li className="active-filter">Бургеры</li>
-                    <li>Твистеры</li>
-                    <li>Курица</li>
-                    <li>Баскеты</li>
-                    <li>Снэки</li>
-                    <li>Соусы</li>
-                    <li>Напитки</li>
-                    <li>Кофе и чай</li>
-                    <li>Десерты</li>
-                    <li>Хиты по 50</li>
-                </ul>
+
+                    {/*<ReactTooltip*/}
+                    {/*    id="main"*/}
+                    {/*    // place={place}*/}
+                    {/*    // type={type}*/}
+                    {/*    // effect={effect}*/}
+                    {/*    multiline={true}*/}
+                    {/*/>*/}
+                    {/*<a data-tip='custom show' data-event='click'>( •̀д•́)</a>*/}
+                    {/*<ReactTooltip globalEventOff='click' />*/}
+
+
+                    {/*<a data-tip='custom show and hide' data-event='click' data-event-off='dblclick'>( •̀д•́)</a>*/}
+                    {/*<ReactTooltip/>*/}
+                </li>
+
+                <li className="delivery-address__list__item pd">
+                    <label className="label-house-number" htmlFor="house-number">Дом</label>
+                    <input type="text" id="house-number"
+                           className="input-error"
+                           placeholder="Остороженка"/>
+                    {/*<div className="form-error">*/}
+                    {/*    <p className="form-error__text">*/}
+                    {/*        Нужно заполнить для оформления доставки*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
+                </li>
+            </ul>
+        </form>
+
+
+
+    </div>
+
+
+)}
+
+
+
 
 
             </div>
-
         </section>
+
+            <div  className="filter">
+                <div className="filter-wrapper">
+                {navItems.map((navItem,index) => {
+                    return (
+                        <Link key={index} activeClass="active" to={navItem}
+                              isDynamic={true}
+                              spy={true} smooth={true} offset={-200} duration={200}>
+                            {navItem}
+                        </Link>
+                    )
+                })}
+
+                </div>
+            </div>
             </>
     );
 };

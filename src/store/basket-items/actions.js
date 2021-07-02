@@ -1,5 +1,16 @@
 import types from "./types";
+import * as api from '../../api/index';
 
+export const getPosts = () => async (dispatch) => {
+    try {
+        const {data} = await api.getPosts();
+console.log('DATA',data)
+        dispatch({type: types.FETCH_ALL, payload: data});
+    } catch (error) {
+        console.log(error.message)
+    }
+
+};
 
 export const addItemToBasket = (item) => {
     return {
@@ -15,3 +26,9 @@ export const removeItemFromBasket = (item) => {
     };
 };
 
+export const changeDelivery = (isDelivered) => {
+    return {
+        type: types.CHANGE_DELIVERY,
+        payload: isDelivered
+    }
+};

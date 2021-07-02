@@ -4,10 +4,11 @@ import Main from "../modules/main/main";
 import Footer from "../modules/footer/footer";
 
 export const MainPage = () => {
+
     return (
         <div>
         <Header/>
-            <Main/>
+            <Main />
             <Footer/>
         </div>
     );

@@ -1,35 +1,22 @@
-export const hasDublicate = (state,payload) => {
+export const findDuplicate = (state,payload,typeOfOperation) => {
+console.log('payload',payload)
+    const sign = typeOfOperation === "+";
     const stateIds = state.map((it) => {
         return it.id;
     });
-    const isIncluded = stateIds.includes(payload.id);
+    const isIncluded = stateIds.includes(payload);
     const findDuplicate = (payload) => {
 
-        var foundIndex = state.findIndex((item) => item.id === payload.id);
-        state[foundIndex].itemQuantity = state[foundIndex].itemQuantity + 1
+         // var foundIndex = state.findIndex((item) => item.id === payload);
+        sign ? (state[payload].itemQuantity = state[payload].itemQuantity + 1) :
+            state[payload].itemQuantity = state[payload].itemQuantity - 1
+
     };
 
     if (isIncluded) {
         findDuplicate(payload);
         return ([...state])
     }
-    return (
-        [
-            ...state,
-            {
-                id: payload.id,
-                src: payload.src,
-                itemPrice: payload.itemPrice,
-                itemName:payload.itemName,
-                itemParamOneName: payload.itemParamOneName,
-                itemParamOneValue: payload.itemParamOneValue,
-                itemParamOneUnit: payload.itemParamOneUnit,
-                itemParamTwoName : payload.itemParamTwoName,
-                itemParamTwoValue : payload.itemParamTwoValue,
-                itemParamTwoUnit: payload.itemParamTwoUnit,
-                itemQuantity: payload.itemQuantity
-            }
-        ]
-    );
 
+    return state;
 };
