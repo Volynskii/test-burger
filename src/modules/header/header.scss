@@ -31,7 +31,6 @@
     align-items: center;
     margin-bottom: 40px;
     width: 100%;
-    //width: 400px;
   }
 
 
@@ -123,12 +122,10 @@ min-height: 100px;
     font-size: clamp(15px,2.8vw,24px);
     margin-right: 13px;
     width: 100px;
-    //margin-left: 43px;
   }
 
   #address,
   #house-number {
-    //width: 310px;
     height: 43px;
     font-size: 16px;
     color: #9D9D9D;
@@ -137,8 +134,6 @@ min-height: 100px;
     border-radius: 4px;
     padding-left: 16px;
   }
-
-
 
 
   // filter
@@ -242,10 +237,7 @@ background-color: red;
     width: 100%;
   }
 .delivery__choosen-city {
-//font-size: 64px;
   width: 50%;
-  //font-size: 2.8vw;
-
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -254,11 +246,7 @@ background-color: red;
 }
   .delivery__choosen-city__city {
     width: 100%;
-    //font-size: 3em;
-    //font-size: clamp(1rem,9vw,3.5rem);
     font-size: clamp(40px, 4.5vw, 60px);
-    //font-stretch: condensed;
-    //font-size: 2em;
   }
 
   .delivery__type {
@@ -295,42 +283,12 @@ width: 50%;
     min-height: 42px;
   }
 
-  .delivery-address__list__item {
-  }
-
-  .input-error {
-    //background-image: url("./images/");
-  }
-  .form-error {
-    position: absolute;
-    width: 463px;
-    height: 46px;
-    margin: 0;
-    margin-top: 10px;
-    font-size: 18px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-//    height: 46px;
-color: white;
-    background-color: black;
-    border-radius: 10px;
-  }
-
-  .form-error__text {
-    margin: 0;
-    padding: 0;
-    width: 463px;
-    //width: 300px;
-text-align: center;
-  }
 
 .label-address,
 .label-house-number {
 
   font-size: clamp(15px,1.8vw,24px);
   margin-right: 13px;
-  //margin-left: 43px;
 }
 
   .pd {
@@ -347,8 +305,6 @@ width: 210px;
     border-radius: 4px;
     padding-left: 16px;
   }
-
-
 
 
   // filter

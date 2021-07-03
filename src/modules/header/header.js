@@ -1,5 +1,6 @@
 import React from "react";
 import './header.scss'
+import Filter from "../../components/filter/filter";
 import {useSelector} from "react-redux";
 import { Link} from "react-scroll";
 // import filters from "../../mocks/filter";
@@ -81,12 +82,6 @@ dispatch(changeDelivery(!activeButton))
                            data-tip = "Нужно заполнить для оформления заказа"
                            data-place="bottom"
                            type="text" id="address" placeholder="Остороженка" />
-                    {/*<div className="form-error">*/}
-                    {/*    <p className="form-error__text">*/}
-                    {/*    Нужно заполнить для оформления доставки*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
-
 
                     {/*<ReactTooltip*/}
                     {/*    id="main"*/}
@@ -108,11 +103,6 @@ dispatch(changeDelivery(!activeButton))
                     <input type="text" id="house-number"
                            className="input-error"
                            placeholder="Остороженка"/>
-                    {/*<div className="form-error">*/}
-                    {/*    <p className="form-error__text">*/}
-                    {/*        Нужно заполнить для оформления доставки*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
                 </li>
             </ul>
         </form>
@@ -124,27 +114,11 @@ dispatch(changeDelivery(!activeButton))
 
 )}
 
-
-
-
-
             </div>
         </section>
 
-            <div  className="filter">
-                <div className="filter-wrapper">
-                {navItems.map((navItem,index) => {
-                    return (
-                        <Link key={index} activeClass="active" to={navItem}
-                              isDynamic={true}
-                              spy={true} smooth={true} offset={-200} duration={200}>
-                            {navItem}
-                        </Link>
-                    )
-                })}
+           <Filter/>
 
-                </div>
-            </div>
             </>
     );
 };

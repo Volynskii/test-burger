@@ -3,8 +3,8 @@ import {findDuplicate} from "../../helpers/findDuplicate";
 import catalogItems from "../../mocks/catalog-items-mock";
 
 const initialState = {
-    catalogItems: catalogItems,
-    basketItems: catalogItems,
+    catalogItems: [],
+    basketItems: [],
     currentTotalPrice: '',
     delivery: true,
 };
@@ -12,7 +12,7 @@ const initialState = {
 
 const  MutateData = (fetchedItems) => {
     for (let object of fetchedItems) {
-object.id = object._id
+// object.id = object._id
         object.itemQuantity = 0
     }
      return fetchedItems;

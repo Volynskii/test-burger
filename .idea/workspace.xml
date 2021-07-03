@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3201b402-eb4b-43af-92c0-01988a3cb9c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/findDuplicate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/findDuplicate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mocks/comments-mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="3201b402-eb4b-43af-92c0-01988a3cb9c6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +40,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$USER_HOME$/Desktop/TEST FOR FRONTEND/NEW/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -74,6 +64,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +91,9 @@
       <workItem from="1625102811409" duration="32112000" />
       <workItem from="1625148904688" duration="7791000" />
       <workItem from="1625194664709" duration="34021000" />
+      <workItem from="1625240260352" duration="8973000" />
+      <workItem from="1625276963251" duration="10249000" />
+      <workItem from="1625288176373" duration="391000" />
     </task>
     <servers />
   </component>

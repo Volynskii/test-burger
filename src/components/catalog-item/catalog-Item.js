@@ -2,6 +2,7 @@ import React from "react";
 import './catalog-item.scss'
 import {addItemToBasket,removeItemFromBasket} from "../../store/basket-items/actions";
 import {useDispatch,useSelector} from "react-redux";
+// import LazyLoad from "react-lazyload";
 
 
 export const CatalogItem = ({catalogItem}) => {
@@ -9,15 +10,15 @@ export const CatalogItem = ({catalogItem}) => {
     const dispatch = useDispatch();
 
     const onAdd = () => {
-        dispatch(addItemToBasket(catalogItem.id))
+        dispatch(addItemToBasket(catalogItem._id))
     };
 
     const onRemove = () => {
-      dispatch(removeItemFromBasket(catalogItem.id))
+      dispatch(removeItemFromBasket(catalogItem._id))
     };
     const basketItems = useSelector((state) => state.basketItems.basketItems);
 
-    var foundIndex = basketItems.findIndex((item) => item.id === catalogItem.id);
+    var foundIndex = basketItems.findIndex((item) => item._id === catalogItem._id);
 
     return (
         <>
@@ -29,7 +30,9 @@ export const CatalogItem = ({catalogItem}) => {
 
                     <div className="catalog__wrapper__list__item__wrapper__picture-block">
                         <div className="catalog__wrapper__list__item__wrapper__picture-block__picture">
-                        <img  alt={catalogItem.id} src={catalogItem.img}/>
+                            {/*<LazyLoad height={250} once>*/}
+                        <img  alt={catalogItem._id} src={catalogItem.img}/>
+                            {/*</LazyLoad>*/}
                         </div>
                         {catalogItem.promotion && (
                             <span style={catalogItem.promotion === 'Хит' ? {backgroundColor: 'black'}: {}} className="catalog__wrapper__list__item__wrapper__picture-block__span">

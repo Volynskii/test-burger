@@ -1,5 +1,8 @@
 @import "utilities/variables";
 
+html {
+  overflow-x: hidden;
+}
 input {
   -webkit-appearance: none;
   -moz-appearance: none;

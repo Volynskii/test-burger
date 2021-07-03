@@ -1,5 +1,99 @@
 @import "../../utilities/variables";
 
+/*mobile-mobile-mobile*/
+@media (min-width: $mobile-width-min) and (max-width: $desktop-width-min) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    height: 214px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .footer__wrapper {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+  }
+    .footer__wrapper__subsection {
+     display: none;
+    }
+
+
+  .footer__wrapper__social-media {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footer__wrapper__social-media__wrapper {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__wrapper__social-media__wrapper__social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 416px;
+    margin-bottom: 30px;
+  }
+
+  .footer__wrapper__social-media__wrapper__social-media a {
+    margin-right: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  #vk {
+    background-image: url("./images/vk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+  }
+  #facebook {
+    background-image: url("./images/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #twitter {
+    background-image: url("./images/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #friends {
+    background-image: url("./images/friends.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer__wrapper__social-media__wrapper__download-app {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #app-android {
+    background-image: url("./images/download-app-android.png");
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 32px;
+  }
+  #app-ios {
+    background-image: url("./images/download-app-ios.png");
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 32px;
+  }
+
+}
+
+
 @media (min-width: $desktop-width-min) {
   .footer {
     display: flex;
@@ -11,6 +105,7 @@ background-image: url("./images/fkc-badge.png");
     background-position: top center;
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 20px;
   }
   .footer__wrapper {
     width: 1250px;
