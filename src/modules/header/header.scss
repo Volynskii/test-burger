@@ -7,8 +7,6 @@
   .headline {
     display: flex;
     justify-content: center;
-    margin-right: 30px;
-    margin-left: 30px;
   }
 
   .headline__wrapper {
@@ -87,7 +85,7 @@
   }
   .delivery__type__button {
     font-family: 'Abel', sans-serif;
-    font-size: clamp(20px,3.2vw,36px);
+    font-size: clamp(18px,3.2vw,36px);
     cursor: pointer;
     transition: 0.2s ease-in-out;
     color: #9D9D9D;
@@ -95,6 +93,9 @@
     width: 50%;
     height: 48px;
     border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   .button-active {
     background-color: #E4002B;
@@ -139,8 +140,8 @@ min-height: 100px;
   // filter
 
   .filter {
-    overflow: auto;
-    white-space: nowrap;
+    //overflow: auto;
+    //white-space: nowrap;
     width: 100%;
     z-index: 10;
     background-color: white;
@@ -150,12 +151,14 @@ min-height: 100px;
     justify-content:center;
     height: 64px;
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+margin-top: 20px;
     color: #9D9D9D;
     font-size: clamp(20px,1.8vw,24px);
   }
   .filter-wrapper {
+    margin-left: 10%;
+    overflow: auto;
+    white-space: nowrap;
     display: flex;
     justify-content: space-between;
     width: 1248px;

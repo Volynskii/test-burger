@@ -7,6 +7,7 @@ import CatalogItem from "../catalog-item/catalog-Item";
 
 const Catalog = ({catalogArrays}) => {
 
+
     return (
         <>
             {catalogArrays.map((filteredCategory,indexCatalog) =>

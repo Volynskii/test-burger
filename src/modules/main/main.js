@@ -1,25 +1,28 @@
 import React, {useEffect} from "react";
 import './main.scss'
-import categories from "../../mocks/categories";
 import {useSelector} from "react-redux";
 import {getPosts} from "../../store/basket-items/actions";
 import {useDispatch} from "react-redux";
 import Loading from "../../components/loading/loading";
 import Catalog from "../../components/catalog/catalog";
-
+import {getCategories} from "../../store/basket-items/actions";
 
 export const Main = () => {
     const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(getPosts());
+    }, [dispatch]);
+    useEffect(() => {
+        dispatch(getCategories());
+    }, [dispatch]);
 
 
     // state from redux
     const initialCatalogItems = useSelector((state) => state.basketItems.catalogItems);
+      const categories = useSelector((state) => state.basketItems.categories);
     const delivery = useSelector((state) => state.basketItems.delivery);
-
-    useEffect(() => {
-        dispatch(getPosts());
-    }, [dispatch]);
+    const isSend = useSelector((state) => state.basketItems.sendToBack);
 
 
     // check if delivery is falsy, if yes filter items
@@ -53,7 +56,7 @@ export const Main = () => {
     return (
         <>
 
-            {!initialCatalogItems.length ? <Loading/> : (
+            {!initialCatalogItems.length && categories.length === 0 ? <Loading/> : (
                <Catalog catalogArrays={catalogArrays}/>
             )
             }

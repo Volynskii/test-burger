@@ -4,12 +4,20 @@ import * as api from '../../api/index';
 export const getPosts = () => async (dispatch) => {
     try {
         const {data} = await api.getPosts();
-console.log('DATA',data)
-        dispatch({type: types.FETCH_ALL, payload: data});
+
+        dispatch({type: types.FETCH_ITEMS, payload: data});
     } catch (error) {
         console.log(error.message)
     }
+};
 
+export const getCategories = () => async (dispatch) => {
+    try {
+        const {data} = await api.getCategories();
+        dispatch({type: types.FETCH_CATEGORIES, payload: data});
+    } catch (error) {
+        console.log(error.message)
+    }
 };
 
 export const addItemToBasket = (item) => {
@@ -32,3 +40,17 @@ export const changeDelivery = (isDelivered) => {
         payload: isDelivered
     }
 };
+
+export const emptyBasket = () => {
+    return {
+        type: types.EMPTY_BASKET
+    }
+};
+
+export const sendToBack = () => {
+    return {
+        type: types.SEND_TO_BACK
+    }
+};
+
+

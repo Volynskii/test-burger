@@ -9,6 +9,8 @@
     height: 214px;
     margin-left: 30px;
     margin-right: 30px;
+    width: 100%;
+
   }
   .footer__wrapper {
     width: 1250px;
@@ -39,12 +41,11 @@
   .footer__wrapper__social-media__wrapper__social-media {
     display: flex;
     justify-content: space-between;
-    width: 416px;
+    width: 280px;
     margin-bottom: 30px;
   }
 
   .footer__wrapper__social-media__wrapper__social-media a {
-    margin-right: 24px;
     width: 24px;
     height: 24px;
   }
@@ -52,24 +53,22 @@
   #vk {
     background-image: url("./images/vk.png");
     background-repeat: no-repeat;
-    background-position: center;
-
-
+    background-position: center center;
   }
   #facebook {
     background-image: url("./images/facebook.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
   }
   #twitter {
     background-image: url("./images/twitter.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
   }
   #friends {
     background-image: url("./images/friends.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
   }
 
   .footer__wrapper__social-media__wrapper__download-app {

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link} from "react-scroll";
 import {navItems} from "../../mocks/filter";
-import categories from "../../mocks/categories";
-
 
 export const Filter = () => {
 

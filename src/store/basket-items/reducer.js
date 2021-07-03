@@ -1,18 +1,17 @@
 import  types from "./types";
 import {findDuplicate} from "../../helpers/findDuplicate";
-import catalogItems from "../../mocks/catalog-items-mock";
 
 const initialState = {
     catalogItems: [],
     basketItems: [],
-    currentTotalPrice: '',
     delivery: true,
+    categories: [],
+    sendToBack: false
 };
 
 
 const  MutateData = (fetchedItems) => {
     for (let object of fetchedItems) {
-// object.id = object._id
         object.itemQuantity = 0
     }
      return fetchedItems;
@@ -22,13 +21,20 @@ export const basketItemsReducer = (state = initialState,{type,payload}) => {
 
     switch (type) {
 
-        case types.FETCH_ALL:
+        case types.FETCH_ITEMS:
 
             return {
                 ...state,
                 catalogItems: MutateData(payload),
                 basketItems: MutateData(payload),
             }
+
+        case types.FETCH_CATEGORIES:
+
+            return {
+                ...state,
+                categories: payload
+            };
 
         case types.ADD_ITEM_TO_BASKET:
             return {
@@ -47,6 +53,20 @@ export const basketItemsReducer = (state = initialState,{type,payload}) => {
             return {
                 ...state,
                 delivery: payload
+            }
+        }
+
+        case types.EMPTY_BASKET: {
+            return {
+                ...state,
+                basketItems: MutateData(state.basketItems)
+            }
+        }
+
+        case types.SEND_TO_BACK: {
+            return {
+                ...state,
+                sendToBack: !state.sendToBack
             }
         }
 
