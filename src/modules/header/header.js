@@ -42,6 +42,7 @@ const isSend = useSelector((state) => state.basketItems.sendToBack);
             if (values.street || values.streetNumber) {
                 dispatch(emptyBasket())
                 dispatch(sendToBack())
+                console.log('send to backend!')
             }
 
         }
@@ -49,6 +50,7 @@ const isSend = useSelector((state) => state.basketItems.sendToBack);
         if(activeButton === false) {
             dispatch(emptyBasket());
             dispatch(sendToBack())
+            console.log('send to backend!')
         }
 
     };

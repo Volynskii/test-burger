@@ -6,11 +6,11 @@ import Footer from "../modules/footer/footer";
 export const MainPage = () => {
 
     return (
-        <div>
+<>
         <Header/>
             <Main />
             <Footer/>
-        </div>
+        </>
     );
 };
 export default MainPage;

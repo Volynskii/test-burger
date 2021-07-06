@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3201b402-eb4b-43af-92c0-01988a3cb9c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-item/catalog-Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-item/catalog-Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/footer/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/main/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/types.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +112,8 @@
       <workItem from="1625240260352" duration="8973000" />
       <workItem from="1625276963251" duration="10249000" />
       <workItem from="1625288176373" duration="391000" />
-      <workItem from="1625292663865" duration="16900000" />
+      <workItem from="1625292663865" duration="19452000" />
+      <workItem from="1625465752007" duration="4257000" />
     </task>
     <servers />
   </component>
