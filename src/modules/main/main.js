@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
 import './main.scss'
 import {useSelector} from "react-redux";
-import {getPosts} from "../../store/basket-items/actions";
+import {getPosts,getCategories} from "../../store/basket-items/actions";
 import {useDispatch} from "react-redux";
 import Loading from "../../components/loading/loading";
 import Catalog from "../../components/catalog/catalog";
-import {getCategories} from "../../store/basket-items/actions";
 
 export const Main = () => {
     const dispatch = useDispatch();
@@ -55,11 +54,9 @@ export const Main = () => {
 
     return (
         <>
-
             {!initialCatalogItems.length && categories.length === 0 ? <Loading/> : (
                <Catalog catalogArrays={catalogArrays}/>
-            )
-            }
+            )}
         </>
     );
 };

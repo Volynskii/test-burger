@@ -4,7 +4,6 @@ import * as api from '../../api/index';
 export const getPosts = () => async (dispatch) => {
     try {
         const {data} = await api.getPosts();
-
         dispatch({type: types.FETCH_ITEMS, payload: data});
     } catch (error) {
         console.log(error.message)
@@ -52,5 +51,3 @@ export const sendToBack = () => {
         type: types.SEND_TO_BACK
     }
 };
-
-
